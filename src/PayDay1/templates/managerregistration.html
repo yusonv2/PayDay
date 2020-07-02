@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="{% static '/css/login.css'%}" rel="stylesheet">
+<link href="{% static '/css/footer.css'%}" rel="stylesheet">
+<nav class="nav_bottom">
+<h1> Manager Registration</h1>
+</nav>
+<div class = "block">
+	<div class= "bezel_e">
+		
+<form method="post">
+	{% csrf_token %}
+	{% for field in managerregistration_form %}
+		<p>
+			{{field.label_tag}}
+			{{field}}
+
+
+			{% if field.help_text %}
+				<small  style="color:rgb(0, 0, 0);">{{field.help_text | safe}}</small>
+			{% endif %}
+
+
+			{%for error in field.errors%}
+				<p style="color:red;">{{error}}</p>
+			{% endfor %}
+		</p>
+
+	{% endfor %}
+	<button type="submit">Register</button>
+
+
+
+</form>
+</div>
+</div>
+
+{% endblock content %}

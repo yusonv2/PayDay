@@ -1,0 +1,151 @@
+html, body {
+    
+    height: auto;
+    overflow-x: hidden;
+    text-align: center;
+    margin:0px;    
+  }
+  .bezel_e p{
+    color: #fff;
+  }
+  .bezel p{
+    color: #fff;
+  }
+  .help{
+    display: block;
+    text-align: center;
+  }
+  .form_control{
+    display: block;
+    margin: auto;
+    clear: both;
+    color:#fff;
+    
+  }
+  .loginform{
+    display: block;
+    margin: auto;
+    clear: both;
+    text-align: center;
+    
+  }
+
+ 
+  .wrapper{
+     margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+  }
+ 
+  .reg_text{
+    overflow: hidden;
+    display: block;
+  }
+  .nav{
+      background-color: rgb(230, 224, 224);
+      padding: 5px 5px 5px 5px ; 
+      border-bottom: 3px solid #414141;
+      margin-bottom: 3%;
+      
+  }
+
+  .nav_bottom{
+    background-color: rgb(230, 224, 224);
+    padding: 5px 5px 5px 5px ; 
+    border-bottom: 3px solid #414141;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    text-align: center;
+  }
+  .block{
+      display:flex;
+      justify-content: center;
+  }
+  .bezel{
+      background:rgb(65, 65, 65);
+      padding: 5px 5px 15px 5px ; 
+      width: 25%;
+      border-radius: 25px;
+  }
+
+ 
+  .bezel_e{
+    background:rgb(87, 85, 85);
+    padding: 5px 5px 15px 5px ; 
+    width: 35%;
+    border-radius: 25px;
+}
+
+  .svg-wrapper {
+    
+    height: 60px;
+    margin: 10px auto;
+    position: relative;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    width: 320px;
+    display: block;
+  }
+    
+ 
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .bezel, .bezel_e{
+      width:40%;
+    }
+  @media only screen and (max-width: 1200px) {
+    .bezel, .bezel_e{
+      width:40%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .bezel, .bezel_e{
+      width:45%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .bezel, .bezel_e{
+      width:55%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .bezel, .bezel_e{
+      width:80%;
+    }
+  }
+  }

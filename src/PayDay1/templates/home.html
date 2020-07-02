@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<link href="{% static '/css/login.css'%}" rel="stylesheet">
+	<link href="{% static '/css/style.css'%}" rel="stylesheet">
+<nav class="nav_bottom">
+	<h1> Welcome to Front Page </h1>
+	</nav>
+
+<div style="border:2px solid #000;">
+
+	<h1> Employee Homepage </h1>
+
+
+	<div class = "block">
+		<div class= "bezel">	
+		<div class="svg-wrapper">
+			<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+			  <rect class="shape" height="60" width="320" />
+			</svg>
+			<a href=" Timesheet">
+			 <div class="text">Timesheet</div>
+			</a>
+		  </div>
+		  <div class="svg-wrapper">
+			<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+			  <rect class="shape" height="60" width="320" />
+			</svg>
+			<a href=" Employee">
+			 <div class="text">Profile</div>
+			</a>
+		  </div>
+		  
+		  <div class="svg-wrapper">
+			<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+			  <rect class="shape" height="60" width="320" />
+			</svg>
+			<a href=" Job_complete">
+			 <div class="text">Jobs Done</div>
+			</a>
+		  </div>
+		  <div class="svg-wrapper">
+			<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+			  <rect class="shape" height="60" width="320" />
+			</svg>
+			<a href="emp_timesheet_history">
+			 <div class="text">Current Month</div>
+			</a>
+		  </div>
+		</div>
+	</div>
+
+{% endblock content %}
